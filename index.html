@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GN Eletricista - Eletrotécnico Residencial e Comercial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rajdhani:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho 3D com Logo ao lado do nome -->
+    <header>
+        <nav>
+            <div class="marca-container">
+                <div class="logo-3d" id="logo3d">
+                    <img src="banner.png" alt="Logo GN Elétrica">
+                </div>
+                <div class="titulo-empresa">
+                    <h1>GN ELETRICISTA</h1>
+                    <span class="sub-marca">ELETROTÉCNICA • GUILHERME NASCIMENTO</span>
+                </div>
+            </div>
+
+            <div class="nav-acoes">
+                <ul class="links-secoes">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Catálogo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="botoes-sociais-topo">
+                    <a href="https://www.instagram.com/nascimentoo.vx?jplx=b2c0Nm4zdDl6bGtn" target="_blank" rel="noopener noreferrer" class="btn-social-3d">
+                        Instagram
+                    </a>
+                    <button type="button" id="btnAbrirModalTopo" class="btn-primario-3d">
+                        Solicitar Orçamento
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Apresentação 3D -->
+        <section id="inicio" class="apresentacao">
+            <span class="selo-profissional">⚡ ELETROTÉCNICO • RESIDENCIAL E COMERCIAL</span>
+            <h2>Eletricista residencial e comercial</h2>
+
+            <p>
+                Atuo com instalações elétricas, manutenção, troca de tomadas e interruptores,
+                iluminação e correção de falhas elétricas.
+            </p>
+            <p>
+                Serviços realizados com foco em segurança, organização e funcionamento correto
+                das instalações elétricas.
+            </p>
+
+            <ul class="destaques">
+                <li>🏠 Residencial | 🏪 Comercial</li>
+                <li>📍 Atendimento na região</li>
+                <li>📞 Orçamentos sob avaliação</li>
+            </ul>
+
+            <div class="faixa-seguranca">
+                <div class="item-seguranca">
+                    <strong>Segurança em Primeiro Lugar</strong>
+                    <span>Dimensionamento adequado e proteções bem aplicadas.</span>
+                </div>
+                <div class="item-seguranca">
+                    <strong>Organização Técnica</strong>
+                    <span>Circuitos limpos, conexões firmes e fácil manutenção.</span>
+                </div>
+                <div class="item-seguranca">
+                    <strong>Avaliação Clara</strong>
+                    <span>Diagnóstico objetivo antes de iniciar a execução.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catálogo Interativo 3D com Pequenos Banners -->
+        <section id="servicos" class="catalogo">
+            <div class="cabecalho-catalogo">
+                <span class="tag-catalogo">CATÁLOGO TÉCNICO INTERATIVO</span>
+                <h2>Catálogo de Serviços</h2>
+                <p>Filtre por categoria, clique em um cartão para inspecionar ou abra o orçamento direto.</p>
+
+                <div class="filtros-catalogo" role="group" aria-label="Filtrar serviços">
+                    <button type="button" class="filtro-btn ativo" data-filtro="todos">Todos (6)</button>
+                    <button type="button" class="filtro-btn" data-filtro="instalacao">Instalações & Pontos</button>
+                    <button type="button" class="filtro-btn" data-filtro="protecao">Quadros & Proteção</button>
+                    <button type="button" class="filtro-btn" data-filtro="iluminacao">Iluminação & Sensores</button>
+                    <button type="button" class="filtro-btn" data-filtro="manutencao">Manutenção</button>
+                </div>
+            </div>
+
+            <div class="grade-servicos">
+
+                <!-- Serviço 1 -->
+                <article class="card-servico" data-categoria="instalacao" data-servico="Instalações Elétricas" data-detalhe="Execução de instalações novas, passagens de cabos e reformas elétricas completas seguindo rigorosamente as normas técnicas.">
+                    <div class="mini-banner-servico">
+                        <span class="mini-banner-codigo">SRV-01 • REDE & CABEAMENTO</span>
+                        <span class="mini-banner-selo">INSTALAÇÃO</span>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-topo">
+                            <div class="cubo-icone-3d">🔌</div>
+                            <span class="badge-categoria">Residencial & Comercial</span>
+                        </div>
+                        <h3>Instalações Elétricas</h3>
+                        <p>Execução de instalações novas, passagens de cabos e reformas elétricas completas seguindo rigorosamente as normas técnicas.</p>
+                        <div class="card-acoes">
+                            <button type="button" class="btn-secundario-3d btn-detalhes">Detalhes</button>
+                            <button type="button" class="btn-primario-3d btn-orcamento">Orçamento ➔</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Serviço 2 -->
+                <article class="card-servico" data-categoria="protecao" data-servico="Quadros de Distribuição (QDC)" data-detalhe="Montagem, organização com barramentos, identificação de circuitos, balanceamento de fases e instalação de disjuntores, IDR e DPS.">
+                    <div class="mini-banner-servico">
+                        <span class="mini-banner-codigo">SRV-02 • QDC / IDR / DPS</span>
+                        <span class="mini-banner-selo">PROTEÇÃO</span>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-topo">
+                            <div class="cubo-icone-3d">⚡</div>
+                            <span class="badge-categoria">Proteção & Padrão</span>
+                        </div>
+                        <h3>Quadros de Distribuição (QDC)</h3>
+                        <p>Montagem, organização com barramentos, identificação de circuitos, balanceamento de fases e instalação de disjuntores, IDR e DPS.</p>
+                        <div class="card-acoes">
+                            <button type="button" class="btn-secundario-3d btn-detalhes">Detalhes</button>
+                            <button type="button" class="btn-primario-3d btn-orcamento">Orçamento ➔</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Serviço 3 -->
+                <article class="card-servico" data-categoria="instalacao" data-servico="Tomadas e Interruptores" data-detalhe="Instalação, substituição e adequação de novos pontos de energia, tomadas 10A/20A e interruptores simples ou paralelos.">
+                    <div class="mini-banner-servico">
+                        <span class="mini-banner-codigo">SRV-03 • 10A / 20A & PARALELOS</span>
+                        <span class="mini-banner-selo">PONTOS</span>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-topo">
+                            <div class="cubo-icone-3d">🔲</div>
+                            <span class="badge-categoria">Acabamento & Pontos</span>
+                        </div>
+                        <h3>Tomadas e Interruptores</h3>
+                        <p>Instalação, substituição e adequação de novos pontos de energia, tomadas 10A/20A e interruptores simples ou paralelos.</p>
+                        <div class="card-acoes">
+                            <button type="button" class="btn-secundario-3d btn-detalhes">Detalhes</button>
+                            <button type="button" class="btn-primario-3d btn-orcamento">Orçamento ➔</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Serviço 4 -->
+                <article class="card-servico" data-categoria="iluminacao" data-servico="Iluminação" data-detalhe="Instalação de luminárias, painéis e fitas de LED, lustres, pendentes e refletores externos com acabamento alinhado.">
+                    <div class="mini-banner-servico">
+                        <span class="mini-banner-codigo">SRV-04 • LED, LUSTRES & REFLETORES</span>
+                        <span class="mini-banner-selo">ILUMINAÇÃO</span>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-topo">
+                            <div class="cubo-icone-3d">💡</div>
+                            <span class="badge-categoria">Interna & Externa</span>
+                        </div>
+                        <h3>Iluminação</h3>
+                        <p>Instalação de luminárias, painéis e fitas de LED, lustres, pendentes e refletores externos com acabamento alinhado.</p>
+                        <div class="card-acoes">
+                            <button type="button" class="btn-secundario-3d btn-detalhes">Detalhes</button>
+                            <button type="button" class="btn-primario-3d btn-orcamento">Orçamento ➔</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Serviço 5 -->
+                <article class="card-servico" data-categoria="iluminacao" data-servico="Sensores de Presença" data-detalhe="Instalação e regulagem de sensores de presença e fotocélulas para corredores, garagens e áreas externas com economia de energia.">
+                    <div class="mini-banner-servico">
+                        <span class="mini-banner-codigo">SRV-05 • PRESENÇA & FOTOCÉLULA</span>
+                        <span class="mini-banner-selo">AUTOMAÇÃO</span>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-topo">
+                            <div class="cubo-icone-3d">📡</div>
+                            <span class="badge-categoria">Automação & Economia</span>
+                        </div>
+                        <h3>Sensores de Presença</h3>
+                        <p>Instalação e regulagem de sensores de presença e fotocélulas para corredores, garagens e áreas externas com economia de energia.</p>
+                        <div class="card-acoes">
+                            <button type="button" class="btn-secundario-3d btn-detalhes">Detalhes</button>
+                            <button type="button" class="btn-primario-3d btn-orcamento">Orçamento ➔</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Serviço 6 -->
+                <article class="card-servico" data-categoria="manutencao" data-servico="Manutenção e Correção de Falhas" data-detalhe="Identificação e reparo de curtos-circuitos, quedas frequentes de disjuntores, fugas de corrente e aquecimento de cabos.">
+                    <div class="mini-banner-servico">
+                        <span class="mini-banner-codigo">SRV-06 • DIAGNÓSTICO & REPARO</span>
+                        <span class="mini-banner-selo">MANUTENÇÃO</span>
+                    </div>
+                    <div class="card-corpo">
+                        <div class="card-topo">
+                            <div class="cubo-icone-3d">🛠️</div>
+                            <span class="badge-categoria">Diagnóstico & Reparo</span>
+                        </div>
+                        <h3>Manutenção e Correção de Falhas</h3>
+                        <p>Identificação e reparo de curtos-circuitos, quedas frequentes de disjuntores, fugas de corrente e aquecimento de cabos.</p>
+                        <div class="card-acoes">
+                            <button type="button" class="btn-secundario-3d btn-detalhes">Detalhes</button>
+                            <button type="button" class="btn-primario-3d btn-orcamento">Orçamento ➔</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Painel interativo de inspeção rápida -->
+            <div id="painelInspecao" class="painel-inspecao oculto">
+                <div class="inspecao-cabecalho">
+                    <div>
+                        <span class="inspecao-tag">INSPEÇÃO DO SERVIÇO</span>
+                        <h3 id="inspecaoTitulo"></h3>
+                    </div>
+                    <button type="button" id="fecharInspecao" class="btn-fechar-3d" aria-label="Fechar detalhes">✕</button>
+                </div>
+                <p id="inspecaoDescricao"></p>
+                <div class="inspecao-rodape">
+                    <span class="inspecao-aviso">💡 Orçamentos sob avaliação técnica • Guilherme Nascimento</span>
+                    <button type="button" id="btnInspecaoOrcamento" class="btn-primario-3d">
+                        Solicitar Orçamento Deste Serviço ➔
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Interativo de Orçamento -->
+    <div id="modalOrcamento" class="modal-backdrop oculto" role="dialog" aria-modal="true" aria-labelledby="tituloModal">
+        <div class="modal-3d">
+            <div class="modal-topo">
+                <h3 id="tituloModal">Solicitar Avaliação com Guilherme Nascimento</h3>
+                <button type="button" id="fecharModal" class="btn-fechar-3d" aria-label="Fechar janela">✕</button>
+            </div>
+            <form id="formOrcamento">
+                <label for="campoServico">Serviço desejado</label>
+                <select id="campoServico" name="servico">
+                    <option value="Instalações Elétricas">Instalações Elétricas</option>
+                    <option value="Quadros de Distribuição (QDC)">Quadros de Distribuição (QDC)</option>
+                    <option value="Tomadas e Interruptores">Tomadas e Interruptores</option>
+                    <option value="Iluminação">Iluminação</option>
+                    <option value="Sensores de Presença">Sensores de Presença</option>
+                    <option value="Manutenção e Correção de Falhas">Manutenção e Correção de Falhas</option>
+                </select>
+
+                <label for="campoAmbiente">Tipo de local</label>
+                <select id="campoAmbiente" name="ambiente">
+                    <option value="Residencial">🏠 Residencial</option>
+                    <option value="Comercial">🏪 Comercial</option>
+                </select>
+
+                <label for="campoMensagem">Detalhes do serviço ou bairro/região</label>
+                <textarea id="campoMensagem" rows="3" placeholder="Ex: Preciso instalar 2 sensores de presença na garagem e revisar um disjuntor..."></textarea>
+
+                <div class="previa-mensagem">
+                    <span class="previa-titulo">PRÉVIA DA MENSAGEM</span>
+                    <pre id="previaTexto"></pre>
+                </div>
+
+                <div class="modal-botoes">
+                    <button type="submit" class="btn-whatsapp-3d">
+                        📲 Enviar para o WhatsApp (85) 98615-0846
+                    </button>
+                    <a href="https://www.instagram.com/nascimentoo.vx?jplx=b2c0Nm4zdDl6bGtn" target="_blank" rel="noopener noreferrer" class="btn-secundario-3d">
+                        Ver Instagram (@nascimentoo.vx)
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rodapé 3D com WhatsApp e Instagram -->
+    <footer id="contato">
+        <div class="footer-box">
+            <span class="tag-catalogo">CONTATO DIRETO</span>
+            <h2>Converse com Guilherme Nascimento</h2>
+            <p>Atendimento residencial e comercial na região com segurança, organização e orçamentos sob avaliação.</p>
+
+            <div class="footer-acoes">
+                <a href="https://wa.me/5585986150846" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-3d">
+                    📲 Chamar no WhatsApp
+                </a>
+                <a href="https://www.instagram.com/nascimentoo.vx?jplx=b2c0Nm4zdDl6bGtn" target="_blank" rel="noopener noreferrer" class="btn-social-3d">
+                    📷 Instagram @nascimentoo.vx
+                </a>
+                <button type="button" id="btnAbrirModalRodape" class="btn-primario-3d">
+                    📝 Montar Pedido de Orçamento
+                </button>
+            </div>
+
+            <p class="copyright">&copy; 2026 - GN Eletricista. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
